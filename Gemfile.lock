@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    aws-csv-download (0.1.0)
+    aws-csv-download (0.2.0)
       capybara
       listen
       selenium-webdriver
