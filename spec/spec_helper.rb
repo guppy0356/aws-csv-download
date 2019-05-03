@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "aws/csv/download"
+require "payment/client"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

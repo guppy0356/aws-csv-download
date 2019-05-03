@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "aws/csv/download/version"
+require "payment/client/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "aws-csv-download"
-  spec.version       = Aws::Csv::Download::VERSION
+  spec.version       = Payment::Client::VERSION
   spec.authors       = ["akira noguchi"]
   spec.email         = ["guppy0356.nakira@gmail.com"]
 
@@ -39,4 +39,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_dependency "selenium-webdriver"
+  spec.add_dependency "webdrivers"
+  spec.add_dependency "capybara"
+  spec.add_dependency "listen"
 end
