@@ -1,15 +1,11 @@
-# Aws::Csv::Download
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/aws/csv/download`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+# Payment::Client
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'aws-csv-download'
+gem 'aws-csv-download', git: 'git@github.com:guppy0356/aws-csv-download.git', require: "payment/client"
 ```
 
 And then execute:
@@ -22,7 +18,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# config/initializers/payment_client.rb
+Rails.application.configure do
+  config.payment_client.download_directory = "/path/to/downloads"
+end
+```
 
 ## Development
 
